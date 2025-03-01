@@ -27,7 +27,9 @@ jobs:
         run: mkdir -p dist
 
       - name: Build project
-        run: elm make src/Main.elm --optimize --output=dist/elm.js
+        run: |
+          elm make src/Main.elm --optimize --output=dist/elm.js
+          elm make src/Counter.elm --optimize --output=dist/counter.js
 
       - name: Copy public files to dist
         run: |
