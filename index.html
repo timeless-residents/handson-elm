@@ -3,18 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Elm Hello World</title>
+    <title>Elm Examples</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-    <div id="elm-app"></div>
-    <script src="elm.js"></script>
+    <div style="display: flex; flex-direction: column; height: 100vh;">
+        <div id="elm-app-main" style="flex: 1;"></div>
+        <div id="elm-app-counter" style="flex: 1;"></div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="counter.js"></script>
     <script>
-        var app = Elm.Counter.init({
-            node: document.getElementById('elm-app')
+        var appMain = Elm.Main.init({
+            node: document.getElementById('elm-app-main')
+        });
+
+        var appCounter = Elm.Counter.init({
+            node: document.getElementById('elm-app-counter')
         });
     </script>
 </body>
