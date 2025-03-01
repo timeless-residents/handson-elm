@@ -17,10 +17,7 @@
     ```sh
     cd handson-elm
     ```
-4. 必要な依存関係をインストールします:
-    ```sh
-    elm install
-    ```
+4. 依存関係は自動的に処理されます。
 
 ## 使用方法
 
@@ -72,9 +69,6 @@ GitHub Pagesにデプロイするには、以下の手順に従ってくださ�
 
           - name: Install Elm
             run: npm install -g elm
-
-          - name: Install dependencies
-            run: elm install
 
           - name: Create dist directory
             run: mkdir -p dist

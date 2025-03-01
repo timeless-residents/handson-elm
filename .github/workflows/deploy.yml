@@ -21,9 +21,6 @@ jobs:
       - name: Install Elm
         run: npm install -g elm
 
-      - name: Install dependencies
-        run: elm install
-
       - name: Create dist directory
         run: mkdir -p dist
 
