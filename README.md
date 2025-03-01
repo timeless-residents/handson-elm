@@ -57,6 +57,8 @@ GitHub Pagesにデプロイするには、以下の手順に従ってくださ�
     jobs:
       build:
         runs-on: ubuntu-latest
+        permissions:
+          contents: write
 
         steps:
           - name: Checkout repository
