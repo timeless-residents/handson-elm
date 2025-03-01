@@ -28,7 +28,7 @@ jobs:
 
       - name: Build project
         run: |
-          elm make src/Main.elm --optimize --output=dist/elm.js
+          elm make src/Main.elm --optimize --output=dist/main.js
           elm make src/Counter.elm --optimize --output=dist/counter.js
 
       - name: Copy public files to dist
